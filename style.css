@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+
+html {
+    background-image: linear-gradient(to right, #ff8473, #fff9d2);
+    font-family: "Madimi One", sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    height: 200px; 
+}
+header label{
+    font-size: xx-large;
+}
+#state_input{
+    font-family: "Madimi One", sans-serif;
+    height: 2em;
+    font-size: large;
+    text-align: center;
+}
+header button{
+    cursor: pointer;
+    padding: 5px 16px;
+    font-size: 14px;
+    vertical-align: middle;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #ffffff;
+    background-color: #2890bd;
+    border-color: #1b1f2326;
+    margin-top: 5px;
+}
+
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+
+#zone_list{
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+}
+#zone_list h2{
+    grid-column: 1 / span 3;
+}
+#zone_list button{
+    margin: 5px;
+    font-family: "Madimi One", sans-serif;
+    font-size: medium;
+}
+
+
+#weather_output{
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+#weather_today{
+    border: 1px white solid;
+    border-radius: 10px;
+    width: 325px;
+    height: 325px;
+    text-align: center;
+    background: rgb(72,226,182);
+    background: linear-gradient(135deg, rgba(72,226,182,1) 0%, rgba(63,65,99,1) 100%);
+}
+
+#weather_today p, #weather_today h2{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(251,251,253);
+}
+#weather_today h3{
+    text-decoration: underline;
+}
+#temp{
+    height: 20%;
+    padding-top: 10%;
+    font-size: xx-large;
+}
+#location{
+    height: 30%;
+    font-size: auto;
+    font-weight: bold;
+    padding: 0px 10px;
+}
+#humidity, #windspeed{
+    height: 15%;
+}
+
+#forecast_div h2{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+  
+tr {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+tr:nth-child(even) {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+td {
+    padding: 2.5px;
+    vertical-align: middle;
+}
+td:nth-child(odd){
+    text-align: right;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather API</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <label>Input State Code:</label>
+        <input type="text" id="state_input">
+        <button type="button" id="get_forecast">GET FORECAST</button>
+    </header>
+    <main>
+        <div id="zone_list">
+
+        </div>
+
+        <div id="weather_output">
+            <div id="weather_today" hidden>
+                <h2>Now:</h2>
+                <p id="temp"></p>
+                <p id="location"></p>
+                <p id="humidity"></p>
+                <p id="windspeed"></p>
+            </div>
+
+            <div id="forecast_div" hidden>
+                <h2>Detailed Forecast</h2>
+                <table id="forecast_table">
+
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
